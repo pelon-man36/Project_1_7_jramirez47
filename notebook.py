@@ -9,4 +9,10 @@ for i in range(1, user_num + 1):
     print(f"Write for entry #{i}:")
     user_entry = input("")
     entries.append(user_entry)
-print(entries)
+
+print("All entries created!")
+user_opt = input("View entries?(yes/no) ")
+if user_opt == "yes":
+    print("Ok")
+else:
+    print("Goodbye!")
