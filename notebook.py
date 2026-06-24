@@ -1,4 +1,9 @@
 empty_list = []
 
 user_num = int(input("Enter number of entries: "))
+while user_num <= 0:
+    print("Cannot enter anything equal or less than 0. Try again.")
+    user_num = int(input("Enter number of entries: "))
 
+for i in range(0, user_num):
+    print("This is a test")
