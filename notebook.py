@@ -20,6 +20,8 @@ while (user_opt != "yes"):
         user_opt = input("Try again ")
 
 if user_opt == "yes":
-    print("Ok")
+    user_opt = int(input(f"Choose entry (#1 of {i})"))
+    entry_choice = entries[user_opt]
+    print(entry_choice)
 
 print("End of program")
