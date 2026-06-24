@@ -20,8 +20,12 @@ while (user_opt != "yes"):
         user_opt = input("Try again ")
 
 if user_opt == "yes":
-    user_opt = int(input(f"Choose entry (#1 of {i})"))
-    entry_choice = entries[user_opt]
-    print(entry_choice)
+    while user_opt != "quit":
+        user_opt = input(f"Choose entry (#1 - {i})('quit' to exit): ")
+        if user_opt == "quit":
+            break
+        else:   
+            entry_choice = entries[int(user_opt) - 1]
+            print(entry_choice)
 
-print("End of program")
+print("End of program. Goodbye!")
