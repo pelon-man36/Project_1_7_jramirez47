@@ -12,7 +12,14 @@ for i in range(1, user_num + 1):
 
 print("All entries created!")
 user_opt = input("View entries?(yes/no) ")
+while (user_opt != "yes"):
+    if user_opt == "no":
+        print("Goodbye")
+        break
+    else:
+        user_opt = input("Try again ")
+
 if user_opt == "yes":
     print("Ok")
-else:
-    print("Goodbye!")
+
+print("End of program")
